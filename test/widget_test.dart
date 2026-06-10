@@ -8,6 +8,8 @@ void main() {
 
     expect(find.text('¡Aprende las Tablas!'), findsOneWidget);
     expect(find.text('Modo Práctica'), findsOneWidget);
+    expect(find.text('Modo Pro'), findsOneWidget);
+    expect(find.text('Problemas de la Vida Real'), findsOneWidget);
     expect(find.text('Ver Todas las Tablas'), findsOneWidget);
     expect(find.text('Elige tu tabla'), findsOneWidget);
   });

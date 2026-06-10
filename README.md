@@ -6,6 +6,8 @@ App educativa en **Flutter** para enseñar las tablas de multiplicar del **1 al 
 
 - **12 tablas interactivas**: elige un número y explora su tabla completa (×1 hasta ×12).
 - **Modo práctica**: preguntas aleatorias con puntuación y racha de aciertos.
+- **Modo Pro**: contador persistente de aciertos; cada **20 respuestas correctas** desbloquea una letra de la contraseña WiFi `casadepapel`.
+- **Problemas de la vida real**: situaciones narradas (granja, escuela, panadería…) tipo *"8 jaulas con 3 conejos cada una"*.
 - **Práctica por tabla**: desde cada tabla puedes practicar solo ese número.
 - **Vista general**: consulta las 12 tablas en una sola pantalla.
 - **Diseño infantil**: colores vivos, tipografía Fredoka/Nunito y botones grandes.
@@ -43,7 +45,12 @@ lib/
 │   ├── home_screen.dart      # Menú principal
 │   ├── table_screen.dart     # Tabla individual
 │   ├── practice_screen.dart  # Modo práctica
+│   ├── pro_mode_screen.dart  # Modo Pro + premio WiFi
+│   ├── word_problems_screen.dart # Problemas narrados
 │   └── all_tables_screen.dart# Todas las tablas
+├── services/pro_mode_service.dart
+├── data/word_problem_generator.dart
+└── models/word_problem.dart
 └── widgets/
     ├── table_card.dart       # Tarjeta de selección
     └── multiplication_row.dart # Fila de multiplicación
